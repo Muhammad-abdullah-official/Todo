@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        overflow: hidden;
+      }
+
+      .form {
+        margin-top: 30px;
+        width: 470px;
+        height: 540px;
+      }
+
+      .form .img {
+        position: absolute;
+        left: 1%;
+        top: 1%;
+      }
+
+      .form h1 {
+        position: relative;
+        top: 5px;
+      }
+
+      .form .inp input,
+      button {
+        width: 290px;
+      }
+
+      .form .fgtbtn a {
+        display: inline-block; /* or inline-flex */
+      }
+
+      .form .fgtbtn {
+        margin: 15px 0px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <img src="./assets/tech-logo.jpg" alt="" class="img" />
+      <h1>Create Account</h1>
+      <h3>Welcome! Let's get started by creating your account.</h3>
+      <div class="inp">
+        <input id="name" type="name" placeholder="FirstName" />
+        <!-- <input type="name" placeholder="LastName" /> -->
+        <input id="uname" type="text" placeholder="Username" />
+        <input id="email" type="email" placeholder="Email" />
+        <input id="password" type="password" placeholder="Password" />
+        <input
+          id="con_password"
+          type="password"
+          placeholder="Confirm Password"
+        />
+        <button onclick="validateForm()">Submit</button>
+      </div>
+      <p>Already have an account!</p>
+      <div class="fgtbtn">
+        <a href="">Go to Google</a> or
+        <a href="./index.html" class="createacc">Sign in</a>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

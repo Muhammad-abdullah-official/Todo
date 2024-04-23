@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Calibri', sans-serif;
+    overflow-y: hidden;
+    background: url('./assets/background4.jpg') no-repeat;
+    background-size: cover;
+}
+
+.form {
+    margin: 0px auto;
+    margin-top: 60px;
+    border: 1px solid rgba(202, 196, 196, 0.016);
+    border-radius: 10px;
+    width: 400px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.066);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 7px rgba(138, 138, 138, 0.575);
+}
+
+.form .img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+
+.form .inp {
+    display: flex;
+    flex-direction: column;
+}
+
+.form h1,
+h3 {
+    color: rgba(18, 18, 18, 0.904);
+}
+
+
+.form h3 {
+    margin: 25px 0px;
+    font-size: 20px;
+}
+
+.form .inp input,
+button {
+    width: 270px;
+    padding: 7px;
+    margin: 10px 0px;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgba(142, 142, 142, 0.792);
+}
+
+.form .inp button {
+    font-weight: bolder;
+    background-color: rgba(6, 136, 243, 0.895);
+    color: rgb(237, 237, 237);
+    cursor: pointer;
+}
+
+.form .inp button:hover {
+    background-color: rgba(255, 255, 255, 0.55);
+    backdrop-filter: 10px;
+    color: rgba(6, 136, 243, 0.895);
+}
+
+.form .inp button:active {
+    width: 250px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.form .btn3 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form .btn3 a {
+    text-decoration: none;
+    margin: 10px 15px;
+    width: 48px;
+}
+
+.form .btns .fgtbtn a {
+    color: rgba(6, 136, 243, 0.895);
+    text-align: center;
+    margin: 7px 10px;
+}
+
+.form .fgtbtn .createacc {
+    text-decoration: none;
+    border: 1px solid rgba(160, 156, 156, 0.607);
+    background-color: rgba(233, 224, 224, 0.226);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.form .fgtbtn .createacc:hover {
+    background-color: rgba(255, 255, 255, 0.573);
+    backdrop-filter: 0px;
+}
